@@ -1,0 +1,65 @@
+<!-- Purpose: Main Page for Final Term Project-->
+<!-- Created: 2025-02-23 -->
+<!-- Last Update: 2025-03-10 -->
+<!--
+=================================================
+=== CIT 190 Javascript Programming ==============
+=== Spring 2025 Northwestern Michigan College ===
+=== Michael J. Wildner Sr. ======================
+=== wildnem@mail.ncm.edu ========================
+=================================================
+
+INTERFACE NOTES: (3/10/2025)
+    This series of games and the interface were designed primarily for computer gamers. Specifically, 
+    gamers that are fond of the military history of World War II. The games cover various aspects of
+    combat (ground, naval and air). Two games are meant to be played head-to-head with two human players
+    (often called a hot-seat game). One is an arcade "shooter".
+    A lot of the design elements were inspired by the "Pirate Games" example provided by the instructor.
+    I've used a similar structure for the navigation bar, and made sure that it is the same across all pages.
+    The color scheme chosen was a selection of colors (sky blue, khaki, blue and green) that would either be used
+    on some of the military equipment featured in the game, or would complement the graphics and pictures used.
+
+    Just for fun, I wanted to include a little video clip from one of my favorite all-time war movies, "Dr. Strangelove"
+    by Stanley Kubruick. It is a 12-second clip from the movie featuring one of the most ironic lines ever spoken in a film,
+    and it was the inspiration for the title of this web project and main page.
+
+     - Michael J. Wildner Sr. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/war_room.css" rel="stylesheet">
+    <title>Wildman's War Room'</title>
+</head>
+<body id="main">
+    <h1>Wildman's War Room</h1>
+    <nav id="navbar">
+        <a id="home" href="#index.html">Home</a>
+        <a id="tank" href="Tanks/tanks.html">Tanks 1943</a>
+        <a id="midway" href="Midway/midway.html">Point Luck</a>
+        <a id="luftwaffe" href="Luftwaffe/luftwaffe.html">Luftwaffe Aces</a>
+        <a id="readme" href="#">Read Me</a>
+    </nav>
+    <section>
+        <p id="message">Games of strategy, tactics, and skills based on World War II</p>
+    </section>
+
+    <aside id="=" movie>
+        <video width="320" height="240" controls>
+            <source src="media/The War Room.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p id="videoTag">
+            Video clip from the movie "Dr. Strangelove" by Stanley Kubrick.
+        </p>
+        <style>
+            #videoTag
+            {color: white;}
+        </style>
+    </aside>
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</body>
+</html>

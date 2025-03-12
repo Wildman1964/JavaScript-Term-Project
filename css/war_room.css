@@ -1,0 +1,102 @@
+﻿/* === Term Project Style Sheet ============ */
+/* === CIT 190 - Northwestern Michigan College ======== */
+/* === Created by: Michael J. Wildner Sr.  ============ */
+/* === Created on: 02/23/2025 ========================= */
+/* === Revised on: 03/10/2025 ========================= */
+/* ==================================================== */
+
+body {
+    background-image: url("../media/mountain.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#luftwaffeBody {
+    background-image: url("../media/fighters.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: azure;
+}
+
+#midwayBody {
+    background-image: url("../media/warships.jpg");
+}
+
+#tanksBody {
+    background-image: url("../media/2tanks.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: darkkhaki;
+}
+
+
+#navbar {
+    overflow: hidden;
+    background-color: #000052;
+    top: 0;
+}
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 12px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        #navbar a:hover {
+            background-color: silver;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: orangered;
+            color: white;
+        }
+
+section {
+    padding: 5px;
+    background-color: lightblue;
+    font-size: 1.2em;
+    opacity: .8;
+    font-weight: bolder;
+}
+
+
+
+    /* =============================== Table formatting =====================n */
+    table {
+        text-align: left;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: black;
+        border: 5px solid #FCB94F;
+        border-right: 2px solid #FCB94F;
+        border-top: 2px solid #FCB94F;
+        border-bottom: 2px solid #FCB94F;
+    }
+
+    th {
+        font-size: 14pt;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: #FCB94F;
+        color: black;
+    }
+
+    td {
+        height: 40px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 12pt;
+        color: black;
+        border-right: 2px solid darkgray;
+        border-bottom: 2px solid darkgray;
+    }
