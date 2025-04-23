@@ -1,48 +1,21 @@
-<!-- Purpose: Game Page (Luftwaffe Aces) for Final Term Project-->
-<!-- Created: 2025-03-09 -->
-<!-- Last Update: 2025-03-10 -->
-<!--
-=================================================
-=== CIT 190 Javascript Programming ==============
-=== Spring 2025 Northwestern Michigan College ===
-=== Michael J. Wildner Sr. ======================
-=== wildnem@mail.ncm.edu ========================
-=== Luftwaffe Aces Main Page ====================
-=================================================
--->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/war_room.css" rel="stylesheet" type="text/css" />
-    <title>Luftwaffe Aces</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/Luftwaffe.css" rel="stylesheet" type="text/css" />
 </head>
+<body onload="startGame()">
+    <div style="text-align:center;width:800px;background-color:green;">
+        <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">Left (9:00)</button><br />
+        <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">Slower (6:00)</button>
+        <button id="fire" onmousedown="fire()" ontouchstart="fire()">FIRE</button>
+        <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">Faster (12:00)</button><br />
+        <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">Right (3:00)</button>
 
-<body id="luftwaffeBody">
-    <header>
         <h1>Luftwaffe Aces</h1>
-    </header>
-
-    <nav id="navbar">
-        <a id="home" href="../index.html">Home</a>
-        <a id="tank" href="../Tanks/tanks.html">Tanks 1943</a>
-        <a id="midway" href="../Midway/midway.html">Point Luck</a>
-        <a id="luftwaffe" href="#luftwaffe.html">Luftwaffe Aces</a>
-        <a id="readme" href="#">Read Me</a>
-    </nav>
-    <section>
-        <p>
-            This is a single player arcade style game of aerial combat in World War II.
-            It is a scrolling shooter type game, inspired by the CapCom games "1942" and "Midway 1943".
-            You will be flying against a large number of enemy aircraft, with your goal being to break
-            records held by actual Luftwaffe (German Air Force) pilots of the war. Can you match Erich
-            Hartmann's incredible feat of shooting down 352 allied planes?
-        </p>
-    </section>
-
-    <script src="../js/war_room.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <h2 id="title">Deutschland Uber Alles!</h2>
+        <h2 id="message"></h2>
+    </div>
+    <script src="../js/Luftwaffe.js"></script>
 </body>
-
 </html>

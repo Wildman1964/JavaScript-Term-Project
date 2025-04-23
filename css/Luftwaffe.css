@@ -1,0 +1,27 @@
+﻿canvas {
+    border: 1px solid #d3d3d3;
+    background-image: url('../media/spain.jpg');
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Old English Text MT";
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    padding: 0px;
+    margin: 0px;
+}
+
+#fire {
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+=======================================================
+=== CIT 190 Javascript Programming                  ===
+=== Spring 2025 Northwestern Michigan College       ===
+=== Michael J. Wildner Sr.  wildnem@mail.ncm.edu    ===
+=== Tanks 1943 Game Board Page  Term Project        ===
+=== Created: 2025-02-23   Last Modified: 04/02/2025 ===
+=======================================================
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Tanks1943.css">
+
+    <title>Tanks 1943</title>
+</head>
+
+<body>
+    <h2 id="title">Tanks 1943</h2>
+    <div class="button">
+        <span id="phase">Start</span>
+
+    </div>
+    <span id="message">Begin the Battle!</span>
+    <ul>
+        <div class="row" id="rowA">A
+
+        <li class="box" id="A01">Sherman</li>
+        <li class="box" id="A02"></li>
+        <li class="box" id="A03"></li>
+        <li class="box" id="A04"></li>
+        <li class="box" id="A05"></li>
+        <li class="box" id="A06"></li>
+        <li class="box" id="A07"></li>
+        <li class="box" id="A08"></li>
+        <li class="box" id="A09"></li>
+        <li class="box" id="A10">PanzerIV</li>
+        </div>
+
+        <div class="row" id="rowB">
+            B
+        <li class="box" id="B01"></li>
+        <li class="box" id="B02"></li>
+        <li class="box" id="B03"></li>
+        <li class="box" id="B04"></li>
+        <li class="box" id="B05"></li>
+        <li class="box" id="B06"></li>
+        <li class="box" id="B07"></li>
+        <li class="box" id="B08"></li>
+        <li class="box" id="B09"></li>
+        <li class="box" id="B10"></li>
+        </div>
+
+        <div class="row" id="rowC">
+            C
+        <li class="box" id="C01">Sherman</li>
+        <li class="box" id="C02"></li>
+        <li class="box" id="C03"></li>
+        <li class="box" id="C04"></li>
+        <li class="box" id="C05"></li>
+        <li class="box" id="C06"></li>
+        <li class="box" id="C07"></li>
+        <li class="box" id="C08"></li>
+        <li class="box" id="C09"></li>
+        <li class="box" id="C10">PanzerIV</li>
+        </div>
+
+        <div class="row" id="rowD">
+            D
+        <li class="box" id="D01">Sherman</li>
+        <li class="box" id="D02"></li>
+        <li class="box" id="D03"></li>
+        <li class="box" id="D04"></li>
+        <li class="box" id="D05"></li>
+        <li class="box" id="D06"></li>
+        <li class="box" id="D07"></li>
+        <li class="box" id="D08"></li>
+        <li class="box" id="D09"></li>
+        <li class="box" id="D10">PanzerIV</li>
+        </div>
+
+        <div class="row" id="rowE">
+            E
+        <li class="box" id="E01"></li>
+        <li class="box" id="E02"></li>
+        <li class="box" id="E03"></li>
+        <li class="box" id="E04"></li>
+        <li class="box" id="E05"></li>
+        <li class="box" id="E06"></li>
+        <li class="box" id="E07"></li>
+        <li class="box" id="E08"></li>
+        <li class="box" id="E09"></li>
+        <li class="box" id="E10"></li>
+        </div>
+
+        <div class="row" id="rowF">
+            F
+        <li class="box" id="F01">Sherman</li>
+        <li class="box" id="F02"></li>
+        <li class="box" id="F03"></li>
+        <li class="box" id="F04"></li>
+        <li class="box" id="F05"></li>
+        <li class="box" id="F06"></li>
+        <li class="box" id="F07"></li>
+        <li class="box" id="F08"></li>
+        <li class="box" id="F09"></li>
+        <li class="box" id="F10">PanzerIV</li>
+        </div>
+
+        <div class="row" id="rowG">
+            G
+        <li class="box" id="G01"></li>
+        <li class="box" id="G02"></li>
+        <li class="box" id="G03"></li>
+        <li class="box" id="G04"></li>
+        <li class="box" id="G05"></li>
+        <li class="box" id="G06"></li>
+        <li class="box" id="G07"></li>
+        <li class="box" id="G08"></li>
+        <li class="box" id="G09"></li>
+        <li class="box" id="G10"></li>
+        </div>
+
+        <div class="row" id="rowH">
+            H
+        <li class="box" id="H01">Sherman</li>
+        <li class="box" id="H02"></li>
+        <li class="box" id="H03"></li>
+        <li class="box" id="H04"></li>
+        <li class="box" id="H05"></li>
+        <li class="box" id="H06"></li>
+        <li class="box" id="H07"></li>
+        <li class="box" id="H08"></li>
+        <li class="box" id="H09"></li>
+        <li class="box" id="H10">PanzerIV</li>
+        </div>
+
+        <div class="row" id="rowI">
+            I
+        <li class="box" id="I01"></li>
+        <li class="box" id="I02"></li>
+        <li class="box" id="I03"></li>
+        <li class="box" id="I04"></li>
+        <li class="box" id="I05"></li>
+        <li class="box" id="I06"></li>
+        <li class="box" id="I07"></li>
+        <li class="box" id="I08"></li>
+        <li class="box" id="I09"></li>
+        <li class="box" id="I10"></li>
+        </div>
+
+        <div class="row" id="rowJ">
+            J
+        <li class="box" id="J01">Sherman</li>
+        <li class="box" id="J02"></li>
+        <li class="box" id="J03"></li>
+        <li class="box" id="J04"></li>
+        <li class="box" id="J05"></li>
+        <li class="box" id="J06"></li>
+        <li class="box" id="J07"></li>
+        <li class="box" id="J08"></li>
+        <li class="box" id="J09"></li>
+        <li class="box" id="J10">PanzerIV</li>
+        </div>
+
+    </ul>
+    <script src="../js/Tanks1943.js"></script>
+</body>
+</html>
