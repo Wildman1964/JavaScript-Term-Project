@@ -1,2 +1,91 @@
-﻿body {
+﻿
+
+/* === For any undiefined elements ===*/
+* {
+    margin: 0;
+    padding: 0;
 }
+/*=== CSS Style Dictionary for  Point Luck ===*/
+/*=============== A =====================*/
+/*=============== B =====================*/
+/*=============== C =====================*/
+.cell {
+    height: 30px;
+    width: 30px;
+    border: 0.25px solid black;
+    /*border-style: inset;*/
+}
+
+.cell:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+
+/*=============== D =====================*/
+div.button {
+    position: fixed;
+    top: 0px;
+    left: 350px;
+    width: 230px;
+    font-size: 1.2em;
+    font-family: Army;
+    text-align: center;
+    border: 5px solid #000000;
+    background-color: #ffd800;
+}
+
+/*=============== H =====================*/
+h1 {
+    font-weight: bold;
+    margin: 10px;
+    background-color: aqua;
+    width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+#hints {
+    position: absolute;
+    top: 55px;
+    left: 315px;
+}
+
+/*=============== M =====================*/
+#message {
+    position: absolute;
+    top: 35px;
+    left: 315px;
+}
+
+/*=============== S =====================*/
+.seaCell {
+    background-color: aquamarine;
+}
+/*=============== T =====================*/
+#tagline {
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: Army;
+    color: crimson;
+}
+td.coordCell {
+    background-color: lightgray;
+}
+
+td.ijnCell {
+    background-color: coral;
+}
+
+td.midway {
+    background-image: url(../media/midway.png);
+    background-repeat: no-repeat;
+}
+
+
+/*=============== U =====================*/
+.usnCell {
+    background-color: lightblue;
+}
+/* ================= End CSS Style Dictionary ============= */

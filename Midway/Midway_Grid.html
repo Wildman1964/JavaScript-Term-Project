@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<!--
+=======================================================
+=== CIT 190 Javascript Programming                  ===
+=== Spring 2025 Northwestern Michigan College       ===
+=== Michael J. Wildner Sr.  wildnem@mail.ncm.edu    ===
+=== Point Luck Game Board Page  Term Project        ===
+=== Created: 02/23/2025   Last Modified: 04/25/2025 ===
+=======================================================
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Point Luck</title>
+    <style>
+        .cell {
+            height: 25px;
+            width: 25px;
+            border: 0.25px solid black;
+            /*border-style: inset;*/
+        }
+
+        .seaCell {
+            background-color: aquamarine;
+        }
+        .ijnCell {
+            background-color:coral;
+        }
+        .usnCell {
+            background-color: lightblue;
+        }
+        .borderCell {
+            background-color: dimgray;
+        }
+        .coordCell {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="text-success">Point Luck</h1>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <table id="gameBoard"></table>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script>
+        $(function () {
+            // Create a 28x22 game board (legal playing surface is 26 x 20)
+            // Globals
+            const ROWS = 22;
+            const COLS = 28;
+
+            let gameBoard = $('<table></table>');
+            for (let i = 0; i < ROWS; i++) {
+                let row = $('<tr></tr>');
+                for (let j = 0; j < COLS; j++) {
+
+                    // Create a cell with a unique ID
+                    // The ID is a combination of the column (1st) then row index
+                    // Example: cellId = A-1, B-2, C-3, etc.
+
+                    let char = String.fromCharCode(j + 64);
+                    let cellId = '';
+                    cellId = char + '-' + i;
+
+                    cell = $('<td class="cell" id=' + cellId + '>' + cellId + '</td>');
+
+                    if ((i == 0) || (j == 0) || (i == ROWS-1) || (j == COLS-1)) {
+                        
+                        cell = $('<td class="cell" id=' + cellId + '></td>');
+                        cell.addClass('coordCell');
+                    }
+                      
+                    if (j == 1)
+                        cell.addClass('ijnCell');
+                    if (j == (COLS - 2)) {
+                        cell.addClass('usnCell');
+                    } else {
+                        cell.addClass('seaCell');
+                    }   
+                    row.append(cell);
+                }
+                gameBoard.append(row);
+            }
+            $('#gameBoard').append(gameBoard);
+        });
+    </script>
+</body>
+
+</html>

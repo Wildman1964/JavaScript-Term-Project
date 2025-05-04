@@ -5,115 +5,36 @@
 === Spring 2025 Northwestern Michigan College       ===
 === Michael J. Wildner Sr.  wildnem@mail.ncm.edu    ===
 === Point Luck Game Board Page  Term Project        ===
-=== Created: 2025-02-23   Last Modified: 04/02/2025 ===
+=== Created: 02/23/2025   Last Modified: 04/25/2025 ===
 =======================================================
 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Tanks1943.css">
-
+    <link rel="stylesheet" href="../css/Midway.css">
     <title>Point Luck</title>
 </head>
 
 <body>
-    <h2 id="title">Point Luck: The Battle of Midway</h2>
-    <div class="button">
-        <span id="phase">Start</span>
-
+    <h1>Point Luck</h1>
+    <p id="tagline">The Battle of Midway <br />June 3-6 1942</p>
+    <div class="button" id ="button" style="background-color: lightgreen">
+        <span id="phase">Start</span>       
     </div>
-    <span id="message">Begin the Battle!</span>
-    <ul>
-        <div class="row" id="rowA">A
-        <li class="box" id="A01"></li>
-        <li class="box" id="A02"></li>
-        <li class="box" id="A03"></li>
-        <li class="box" id="A04"></li>
-        <li class="box" id="A05"></li>
-        <li class="box" id="A06"></li>
-        <li class="box" id="A07"></li>
-        <li class="box" id="A08"></li>
-        <li class="box" id="A09"></li>
-        <li class="box" id="A10"></li>
-        <li class="box" id="A11"></li>
-        <li class="box" id="A12"></li>
-        <li class="box" id="A13"></li>
-        <li class="box" id="A14"></li>
-        <li class="box" id="A15"></li>
-        <li class="box" id="A16"></li>
-        <li class="box" id="A17"></li>
-        <li class="box" id="A18"></li>
-        <li class="box" id="A19"></li>
-        <li class="box" id="A20"></li>
-        <li class="box" id="A21"></li>
-        <li class="box" id="A22"></li>
-        <li class="box" id="A23"></li>
-        <li class="box" id="A24"></li>
-        <li class="box" id="A25"></li>
-        <li class="box" id="A26"></li>
-        </div>
-        <div class="row" id="rowB">
-        <li class="box" id="B01"></li>
-        <li class="box" id="B02"></li>
-        <li class="box" id="B03"></li>
-        <li class="box" id="B04"></li>
-        <li class="box" id="B05"></li>
-        <li class="box" id="B06"></li>
-        <li class="box" id="B07"></li>
-        <li class="box" id="B08"></li>
-        <li class="box" id="B09"></li>
-        <li class="box" id="B10"></li>
-        <li class="box" id="B11"></li>
-        <li class="box" id="B12"></li>
-        <li class="box" id="B13"></li>
-        <li class="box" id="B14"></li>
-        <li class="box" id="B15"></li>
-        <li class="box" id="B16"></li>
-        <li class="box" id="B17"></li>
-        <li class="box" id="B18"></li>
-        <li class="box" id="B19"></li>
-        <li class="box" id="B20"></li>
-        <li class="box" id="B21"></li>
-        <li class="box" id="B22"></li>
-        <li class="box" id="B23"></li>
-        <li class="box" id="B24"></li>
-        <li class="box" id="B25"></li>
-        <li class="box" id="B26"></li>
-        </div>
-        <div class="row" id="rowC">
-        <li class="box" id="C01"></li>
-        <li class="box" id="C02"></li>
-        <li class="box" id="C03"></li>
-        <li class="box" id="C04"></li>
-        <li class="box" id="C05"></li>
-        <li class="box" id="C06"></li>
-        <li class="box" id="C07"></li>
-        <li class="box" id="C08"></li>
-        <li class="box" id="C09"></li>
-        <li class="box" id="C10"></li>
-        <li class="box" id="C11"></li>
-        <li class="box" id="C12"></li>
-        <li class="box" id="C13"></li>
-        <li class="box" id="C14"></li>
-        <li class="box" id="C15"></li>
-        <li class="box" id="C16"></li>
-        <li class="box" id="C17"></li>
-        <li class="box" id="C18"></li>
-        <li class="box" id="C19"></li>
-        <li class="box" id="C20"></li>
-        <li class="box" id="C21"></li>
-        <li class="box" id="C22"></li>
-        <li class="box" id="C23"></li>
-        <li class="box" id="C24"></li>
-        <li class="box" id="C25"></li>
-        <li class="box" id="C26"></li>
-        </div>
+    <div id="message">Begin the Battle!!!</div>
+    <div id="hints">Player Hints Here...</div>
 
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <table id="gameBoard"></table>
+        </div>
+    </div>
 
-    </ul>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/Midway.js"></script>
 </body>
+
 </html>

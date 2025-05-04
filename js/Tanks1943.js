@@ -186,7 +186,6 @@ document.querySelectorAll('.box').forEach(square =>
         }
 
         // RELOCATION (0/1) US HQ Selected
-
         // RELOCATION (0/1) US Ammo Selected
         // RELOCATION (0/1) US Fuel Selected
         // RELOCATION (0/1) US AT Selected
